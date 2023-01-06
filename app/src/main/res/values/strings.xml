@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">CarBooking</string>
+    <string name="titleText">Car Booking App</string>
+
+    <!--Intro page-->
+    <string name="intro_title_1">Chose The Route</string>
+    <string name="intro_title_2">Request Ride </string>
+    <string name="intro_title_3">Get Your Taxi</string>
+
+    <string name="intro_description_1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+    <string name="intro_description_2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+    <string name="intro_description_3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+
+
+    <!--Login page-->
+    <string name="loginText">Login</string>
+    <string name="userEmail">User Email</string>
+    <string name="password">Password</string>
+    <string name="forgotPasswordText">Forget Password?</string>
+    <string name="rememberMeText">Remember me</string>
+
+    <!--signup page-->
+    <string name="emailAddressText">E-mail Adress</string>
+    <string name="signupText">Sign Up</string>
+
+
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="handler"
+            type="com.carbooking.app.intro.IntroActivity.ClickHandler" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/indicatorView"/>
+
+        <com.zhpan.indicator.IndicatorView
+            android:id="@+id/indicatorView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/nextBtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_30adp"
+            android:layout_marginTop="@dimen/_10adp"
+            app:vpi_orientation="horizontal"
+            app:vpi_slide_mode="normal"
+            app:vpi_slider_checked_color="#0887FC"
+            app:vpi_slider_normal_color="#616161"
+            app:vpi_style="round_rect" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/nextBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@{handler::onNextClick}"
+            app:cardBackgroundColor="@color/purple_700"
+            android:layout_marginBottom="@dimen/_70adp"
+            android:layout_marginTop="@dimen/_10adp"
+            android:layout_marginHorizontal="@dimen/_20adp"
+            app:cardCornerRadius="@dimen/_20adp"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_margin="@dimen/_10adp"
+                android:textSize="@dimen/_18asp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/urbanist_regular"
+                android:text="Next"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+
+</layout>
